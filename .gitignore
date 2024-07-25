@@ -1,6 +1,31 @@
-node_modules
-dist
 storybook-static
 *storybook.log
 
-.idea
+dist
+.solid
+.output
+.vercel
+.netlify
+.vinxi
+.turbo
+
+# Environment
+.env
+.env*.local
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+
+# Temp
+gitignore
+
+# System Files
+.DS_Store
+Thumbs.db
