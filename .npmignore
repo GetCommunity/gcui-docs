@@ -1,1 +1,5 @@
 src
+.turbo
+node_modules
+*.config.js
+*.config.json
