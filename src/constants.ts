@@ -159,8 +159,8 @@ export type FontFamilyOpt = {
   type: 'primary' | 'secondary';
   className: string;
   name: string;
-  src: Promise<any>;
-  srcvar?: Promise<any>;
+  src: string;
+  srcvar?: string;
 };
 
 export type FontFamilyKey = {
@@ -173,10 +173,9 @@ export const fontFamilies: FontFamilyKey = {
       name: 'Noto Sans',
       type: 'primary',
       className: 'font-gc-primary',
-      src: import('@getcommunity/client-styleguides/fonts/NotoSans/noto-sans.css'),
-      srcvar: import(
-        '@getcommunity/client-styleguides/fonts/NotoSans/noto-sans-variable.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/NotoSans/noto-sans.css',
+      srcvar:
+        'https://getcommunityinc.com/mycommunityapps/fonts/NotoSans/noto-sans-variable.css',
     },
   ],
   biasc: [
@@ -184,18 +183,15 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-biasc-primary',
       name: 'Proxima Nova',
-      src: import(
-        '@getcommunity/client-styleguides/fonts/ProximaNova/proxima-nova.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/ProximaNova/proxima-nova.css',
     },
     {
       type: 'secondary',
       className: 'font-biasc-secondary',
       name: 'Oswald',
-      src: import('@getcommunity/client-styleguides/fonts/Oswald/oswald.css'),
-      srcvar: import(
-        '@getcommunity/client-styleguides/fonts/Oswald/oswald-variable.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Oswald/oswald.css',
+      srcvar:
+        'https://getcommunityinc.com/mycommunityapps/fonts/Oswald/oswald-variable.css',
     },
   ],
   brandywine: [
@@ -203,18 +199,15 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-brandywine-primary',
       name: 'Proxima Nova',
-      src: import(
-        '@getcommunity/client-styleguides/fonts/ProximaNova/proxima-nova.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/ProximaNova/proxima-nova.css',
     },
     {
       type: 'secondary',
       className: 'font-brandywine-secondary',
       name: 'Oswald',
-      src: import('@getcommunity/client-styleguides/fonts/Oswald/oswald.css'),
-      srcvar: import(
-        '@getcommunity/client-styleguides/fonts/Oswald/oswald-variable.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Oswald/oswald.css',
+      srcvar:
+        'https://getcommunityinc.com/mycommunityapps/fonts/Oswald/oswald-variable.css',
     },
   ],
   olsonhomes: [
@@ -222,13 +215,13 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-olsonhomes-primary',
       name: 'Gotham',
-      src: import('@getcommunity/client-styleguides/fonts/Gotham/gotham.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Gotham/gotham.css',
     },
     {
       type: 'secondary',
       className: 'font-olsonhomes-secondary',
       name: 'Gladiola',
-      src: import('@getcommunity/client-styleguides/fonts/Gladiola/gladiola.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Gladiola/gladiola.css',
     },
   ],
   pacificcommunities: [
@@ -236,15 +229,13 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-pacificcommunities-primary',
       name: 'Roboto',
-      src: import('@getcommunity/client-styleguides/fonts/Roboto/roboto.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Roboto/roboto.css',
     },
     {
       type: 'secondary',
       className: 'font-pacificcommunities-secondary',
       name: 'IBM Plex Serif',
-      src: import(
-        '@getcommunity/client-styleguides/fonts/IBMPlexSerif/ibm-plex-serif.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/IBMPlexSerif/ibm-plex-serif.css',
     },
   ],
   sheahomes: [
@@ -252,7 +243,7 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-sheahomes-primary',
       name: 'Gotham',
-      src: import('@getcommunity/client-styleguides/fonts/Gotham/gotham.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Gotham/gotham.css',
     },
   ],
   tollbrothers: [
@@ -260,15 +251,13 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-tollbrothers-primary',
       name: 'DM Serif Display',
-      src: import(
-        '@getcommunity/client-styleguides/fonts/DMSerifDisplay/dm-serif-display.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/DMSerifDisplay/dm-serif-display.css',
     },
     {
       type: 'secondary',
       className: 'font-tollbrothers-secondary',
       name: 'Gotham',
-      src: import('@getcommunity/client-styleguides/fonts/Gotham/gotham.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Gotham/gotham.css',
     },
   ],
   trumark: [
@@ -276,19 +265,17 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-trumark-primary',
       name: 'Montserrat',
-      src: import('@getcommunity/client-styleguides/fonts/Montserrat/montserrat.css'),
-      srcvar: import(
-        '@getcommunity/client-styleguides/fonts/Montserrat/montserrat-variable.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Montserrat/montserrat.css',
+      srcvar:
+        'https://getcommunityinc.com/mycommunityapps/fonts/Montserrat/montserrat-variable.css',
     },
     {
       type: 'primary',
       className: 'font-trumark-secondary',
       name: 'Raleway',
-      src: import('@getcommunity/client-styleguides/fonts/Raleway/raleway.css'),
-      srcvar: import(
-        '@getcommunity/client-styleguides/fonts/Raleway/raleway-variable.css'
-      ),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Raleway/raleway.css',
+      srcvar:
+        'https://getcommunityinc.com/mycommunityapps/fonts/Raleway/raleway-variable.css',
     },
   ],
   vandaele: [
@@ -296,7 +283,7 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-vandaele-primary',
       name: 'Gotham',
-      src: import('@getcommunity/client-styleguides/fonts/Gotham/gotham.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Gotham/gotham.css',
     },
   ],
   wpg: [
@@ -304,13 +291,13 @@ export const fontFamilies: FontFamilyKey = {
       type: 'primary',
       className: 'font-wpg-primary',
       name: 'Helvetica',
-      src: import('@getcommunity/client-styleguides/fonts/Helvetica/helvetica.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Helvetica/helvetica.css',
     },
     {
       type: 'secondary',
       className: 'font-wpg-secondary',
       name: 'Optima',
-      src: import('@getcommunity/client-styleguides/fonts/Optima/optima.css'),
+      src: 'https://getcommunityinc.com/mycommunityapps/fonts/Optima/optima.css',
     },
   ],
 };

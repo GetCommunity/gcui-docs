@@ -8,26 +8,26 @@ const preview = {
     withThemeByDataAttribute({
       themes: {
         light: 'light',
-        dark: 'dark'
+        dark: 'dark',
       },
       defaultTheme: 'light',
-      attributeName: 'data-mode'
+      attributeName: 'data-mode',
     }),
     (Story) => {
       const solidRoot = document.createElement('div');
       render(Story, solidRoot);
       return solidRoot;
-    }
+    },
   ],
   actions: { argTypesRegex: '^on[A-Z].*' },
   parameters: {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/i
-      }
-    }
-  }
+        date: /Date$/i,
+      },
+    },
+  },
 };
 
 export default preview;

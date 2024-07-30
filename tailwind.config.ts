@@ -1,5 +1,17 @@
-import type { Config } from 'tailwindcss';
-const {
+import {
+  ClientStylesBIASC,
+  ClientStylesBrandywine,
+  ClientStylesGetCommunity,
+  ClientStylesOlsonhomes,
+  ClientStylesPacificcommunities,
+  ClientStylesSheahomes,
+  ClientStylesSocialBrands,
+  ClientStylesTollbrothers,
+  ClientStylesTrumark,
+  ClientStylesVandaele,
+  ClientStylesWoodbridgePacificGroup,
+} from '@getcommunity/client-styleguides';
+import {
   GcuiTwAccordion,
   GcuiTwAlert,
   GcuiTwAvatar,
@@ -17,23 +29,29 @@ const {
   GcuiTwSeparator,
   GcuiTwTabs,
   GcuiTwToast,
-} = require('@getcommunity/gcui-tailwind');
+} from '@getcommunity/gcui-tailwind';
+import type { Config } from 'tailwindcss';
 
 export default {
   darkMode: ['selector', '[data-theme="dark"]'],
-  content: [
-    './index.html',
-    './src/**/*.{html,js,ts,jsx,tsx}',
-    './node_modules/@getcommunity/gcui/dist/**/*.{html,js,jsx,ts,tsx,mdx}',
-  ],
+  content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx}', '@getcommunity/gcui'],
   theme: {
     extend: {},
   },
   plugins: [
     // Base TW Addons
     require('@tailwindcss/typography'),
-    // GC Client Styles
-    require('@getcommunity/client-styleguides'),
+    ClientStylesBrandywine,
+    ClientStylesBIASC,
+    ClientStylesGetCommunity,
+    ClientStylesOlsonhomes,
+    ClientStylesPacificcommunities,
+    ClientStylesSheahomes,
+    ClientStylesSocialBrands,
+    ClientStylesTollbrothers,
+    ClientStylesTrumark,
+    ClientStylesVandaele,
+    ClientStylesWoodbridgePacificGroup,
     // GCUI Kobalte
     require('@kobalte/tailwindcss'),
     // GCUI Core

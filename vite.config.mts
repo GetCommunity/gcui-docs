@@ -5,15 +5,15 @@ import solidPlugin from 'vite-plugin-solid';
 export default defineConfig({
   plugins: [
     // devtools(), https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
-    solidPlugin()
+    solidPlugin(),
   ],
   server: {
-    port: 3000
+    port: 3000,
   },
   build: {
-    target: 'esnext'
+    target: 'esnext',
   },
   optimizeDeps: {
-    exclude: ['@storybook/html-vite']
-  }
+    exclude: ['@storybook/html-vite'],
+  },
 });

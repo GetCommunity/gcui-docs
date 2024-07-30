@@ -7,6 +7,7 @@
     "@getcommunity/client-styleguides": "workspace:*",
     "@getcommunity/config-eslint": "workspace:*",
     "@getcommunity/config-prettier": "workspace:*",
+    "@solidjs/meta": "0.29.4",
     "@storybook/addon-docs": "^8.2.5",
     "@storybook/addon-essentials": "^8.2.5",
     "@storybook/addon-interactions": "^8.2.5",

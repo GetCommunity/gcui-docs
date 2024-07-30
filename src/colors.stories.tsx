@@ -17,7 +17,7 @@ export const TollBrothers: Story = { args: { client: 'tollbrothers' } };
 export const Trumark: Story = { args: { client: 'trumark' } };
 export const VanDaele: Story = { args: { client: 'vandaele' } };
 export const WoodbridgePacificGroup: Story = {
-  args: { client: 'wpg' }
+  args: { client: 'wpg' },
 };
 
 export default {
@@ -38,8 +38,8 @@ export default {
     return (
       <>
         <Show when={baseColors.length > 0}>
-          <h3 class="mb-2 mt-3 text-2xl">Base Colors</h3>
-          <div class="flex flex-wrap items-center justify-start">
+          <h3 class='mb-2 mt-3 text-2xl'>Base Colors</h3>
+          <div class='flex flex-wrap items-center justify-start'>
             <For each={baseColors}>
               {(color) => {
                 let colorName = color.bg
@@ -61,8 +61,8 @@ export default {
           </div>
         </Show>
         <Show when={primaryColors.length > 0}>
-          <h3 class="mb-2 mt-3 text-2xl">Primary Colors</h3>
-          <div class="flex flex-wrap items-center justify-start">
+          <h3 class='mb-2 mt-3 text-2xl'>Primary Colors</h3>
+          <div class='flex flex-wrap items-center justify-start'>
             <For each={primaryColors}>
               {(color) => {
                 let colorName = color.bg
@@ -84,8 +84,8 @@ export default {
           </div>
         </Show>
         <Show when={secondaryColors.length > 0}>
-          <h3 class="mb-2 mt-3 text-2xl">Secondary Colors</h3>
-          <div class="flex flex-wrap items-center justify-start">
+          <h3 class='mb-2 mt-3 text-2xl'>Secondary Colors</h3>
+          <div class='flex flex-wrap items-center justify-start'>
             <For each={secondaryColors}>
               {(color) => {
                 let colorName = color.bg
@@ -107,8 +107,8 @@ export default {
           </div>
         </Show>
         <Show when={accentColors.length > 0}>
-          <h3 class="mb-2 mt-3 text-2xl">Accent Colors</h3>
-          <div class="flex flex-wrap items-center justify-start">
+          <h3 class='mb-2 mt-3 text-2xl'>Accent Colors</h3>
+          <div class='flex flex-wrap items-center justify-start'>
             <For each={accentColors}>
               {(color) => {
                 let colorName = color.bg
@@ -135,10 +135,10 @@ export default {
   argTypes: {
     client: {
       control: 'select',
-      options: Object.keys(clientColorsKey)
-    }
+      options: Object.keys(clientColorsKey),
+    },
   },
   args: {
-    client: 'getcommunity'
-  }
+    client: 'getcommunity',
+  },
 } as Meta;
